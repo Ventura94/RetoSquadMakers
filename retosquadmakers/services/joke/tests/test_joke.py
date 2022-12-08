@@ -4,8 +4,8 @@ import pytest
 from httpx import AsyncClient
 from sqlalchemy import select, insert
 
-from data_access.models import JokeModel
-from settings import async_database
+from retosquadmakers.data_access.models import JokeModel
+from retosquadmakers.settings import async_database
 
 
 @pytest.mark.anyio

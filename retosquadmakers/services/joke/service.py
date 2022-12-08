@@ -2,8 +2,8 @@ import random
 
 from fastapi import Depends
 
-from services.joke.enums import JokeProviderEnum
-from services.joke.repositories import Repository
+from retosquadmakers.services.joke.enums import JokeProviderEnum
+from retosquadmakers.services.joke.repositories import Repository
 
 
 class JokeService:

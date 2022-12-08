@@ -1,4 +1,4 @@
-from core.schemas import UJSONModel
+from retosquadmakers.core.schemas import UJSONModel
 
 
 class JokeSchema(UJSONModel):

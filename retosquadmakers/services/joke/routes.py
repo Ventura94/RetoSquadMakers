@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Query, Depends, Form, status
 
-from core.exceptions import NotFound
-from services.joke.enums import JokeProviderEnum
-from services.joke.schemas import JokeSchema, JokeDBSchema
-from services.joke.service import JokeService
+from retosquadmakers.core.exceptions import NotFound
+from retosquadmakers.services.joke.enums import JokeProviderEnum
+from retosquadmakers.services.joke.schemas import JokeSchema, JokeDBSchema
+from retosquadmakers.services.joke.service import JokeService
 
 router = APIRouter(prefix="/joke", tags=["Jokes"])
 

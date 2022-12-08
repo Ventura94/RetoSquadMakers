@@ -2,8 +2,8 @@ from fastapi import FastAPI
 from fastapi.responses import UJSONResponse
 from starlette.middleware.cors import CORSMiddleware
 
-from services import joke, maths
-from settings import database, async_database
+from retosquadmakers.services import joke, maths
+from retosquadmakers.settings import database, async_database
 
 app = FastAPI(title="SquadMakers", default_response_class=UJSONResponse)
 

@@ -1,10 +1,6 @@
 name: Developer Test
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+on: [ push, pull_request ]
 
 jobs:
   Test:
@@ -35,6 +31,7 @@ jobs:
           TEST: True
         run: |
           python -m pip install --upgrade pip          
+          pip install poetry pytest pytest-mock trio
+          poetry export -f requirements.txt --output requirements.txt --without-hashes 
           pip install -r requirements.txt
-          pip install -r requirements-dev.txt
-          python -m pytest --cov app
+          python -m pytest
