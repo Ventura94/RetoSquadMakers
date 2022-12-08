@@ -1,6 +1,6 @@
 from itertools import combinations
 
-from ...core.exceptions import ValidationError
+from core.exceptions import ValidationError
 
 
 class MathsService:

@@ -7,7 +7,7 @@ from sqlalchemy import select, insert, update, delete
 
 from database import Base
 from models import JokeModel
-from ..settings import async_database
+from settings import async_database
 
 
 class BaseRepository:
