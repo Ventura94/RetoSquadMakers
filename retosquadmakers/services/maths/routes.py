@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Query, Depends
 
-from service import MathsService
+from retosquadmakers.services.maths.service import MathsService
 
 router = APIRouter(prefix="/maths", tags=["Maths"])
 

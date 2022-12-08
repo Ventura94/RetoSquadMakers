@@ -1,1 +1,1 @@
-from routes import router
+from retosquadmakers.services.joke.routes import router

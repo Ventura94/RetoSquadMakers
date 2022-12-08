@@ -1,1 +1,1 @@
-from routes import router
+from retosquadmakers.services.maths.routes import router

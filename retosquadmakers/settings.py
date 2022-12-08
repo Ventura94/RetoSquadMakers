@@ -5,7 +5,7 @@ from typing import Final
 import databases
 from pydantic import BaseSettings
 
-from data_access.database import DataBaseEngine
+from retosquadmakers.data_access.database import DataBaseEngine
 
 
 class SettingsEnviron(BaseSettings):

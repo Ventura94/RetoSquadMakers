@@ -2,7 +2,7 @@ from datetime import datetime
 
 from sqlalchemy import Column, Integer, DateTime, Boolean, String
 
-from database import Base
+from retosquadmakers.data_access.database import Base
 
 
 class JokeModel(Base):
