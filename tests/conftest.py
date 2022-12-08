@@ -29,7 +29,7 @@ async def session():
         Base.metadata.drop_all(bind=engine)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture(scope="session")
 async def client():
     async with AsyncClient(app=app, base_url="http://test") as client:
         yield client
