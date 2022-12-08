@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Query, Depends, Form, status
 
-from core.exceptions import NotFound
-from services.joke.enums import JokeProviderEnum
-from services.joke.schemas import JokeSchema, JokeDBSchema
-from services.joke.service import JokeService
+from enums import JokeProviderEnum
+from schemas import JokeSchema, JokeDBSchema
+from service import JokeService
+from ...core.exceptions import NotFound
 
 router = APIRouter(prefix="/joke", tags=["Jokes"])
 

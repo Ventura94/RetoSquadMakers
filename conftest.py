@@ -2,9 +2,9 @@ import pytest
 from httpx import AsyncClient
 from sqlalchemy import create_engine
 
-from data_access.database import Base
-from main import app
-from settings import get_settings, async_database
+from retosquadmakers.data_access.database import Base
+from retosquadmakers.main import app
+from retosquadmakers.settings import get_settings, async_database
 
 
 @pytest.fixture(scope="session")

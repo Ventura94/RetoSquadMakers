@@ -1,1 +1,1 @@
-from services.joke.routes import router
+from routes import router

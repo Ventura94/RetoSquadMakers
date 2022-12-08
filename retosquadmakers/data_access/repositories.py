@@ -5,9 +5,9 @@ from typing import Type, Literal
 from httpx import AsyncClient
 from sqlalchemy import select, insert, update, delete
 
-from data_access.database import Base
-from data_access.models import JokeModel
-from settings import async_database
+from database import Base
+from models import JokeModel
+from ..settings import async_database
 
 
 class BaseRepository:

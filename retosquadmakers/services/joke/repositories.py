@@ -1,4 +1,4 @@
-from data_access.repositories import ChuckNorrisRepository, CanHazDadJokeRepository, JokeRepository
+from ...data_access.repositories import ChuckNorrisRepository, CanHazDadJokeRepository, JokeRepository
 
 
 class Repository:

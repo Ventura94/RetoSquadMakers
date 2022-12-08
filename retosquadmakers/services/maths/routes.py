@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Query, Depends
 
-from services.maths.service import MathsService
+from service import MathsService
 
 router = APIRouter(prefix="/maths", tags=["Maths"])
 
